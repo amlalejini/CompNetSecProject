@@ -2,6 +2,7 @@ import pxssh, getpass, time, json, sys, os
 
 DEFAULT_SETTINGS_FILE = "settings.json"
 MSG_FREQ = 3 # Message frequency in seconds
+DEBUG = True
 
 if __name__ == "__main__":
     # Load up some defaults
@@ -80,6 +81,7 @@ if __name__ == "__main__":
     ssh.sendline("cd Garbage")  # FTP
     # Infinitely get the message.
     while True:
+        if DEBUG: print("GRABBING MSG!")
         ssh.sendline("get secret.msg")
         time.sleep(MSG_FREQ)
 
