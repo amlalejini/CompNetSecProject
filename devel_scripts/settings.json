@@ -1,15 +1,15 @@
 {
   "__comment": "Storing passwords in plain text is terrible, but whatever.  This is for a security project where the systems are supposed to insecure anyways.",
   "local": {
-    "machine_name": "original",
-    "username": "amlalejini",
-    "ip": "192.168.0.10",
-    "password": "pass"
+    "machine_name": "eb2",
+    "username": "root",
+    "ip": "10.1.1.2",
+    "password": "enbodyiscool"
   },
   "remote": {
-    "machine_name": "sequel",
-    "username": "amlalejini",
-    "ip": "192.168.0.12",
-    "password": "pass"
+    "machine_name": "eb3",
+    "username": "root",
+    "ip": "10.1.1.3",
+    "password": "enbodyiscool"
   }
 }

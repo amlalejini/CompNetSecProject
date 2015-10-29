@@ -57,7 +57,7 @@ if __name__ == "__main__":
         print("SSH Connection Established!")
 
     # Move to Garbage directory (where we'll do all of our file manipulating)
-    ssh.sendline("cd Garbage")
+    ssh.sendline("cd msg_vault")
 
     # This is where it gets dumb.
     # ===========================================
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     # ===========================================
     # Transfer files!
     # Go to garbage directory
-    ssh.sendline("cd Garbage")  # FTP
+    ssh.sendline("cd msg_vault")  # FTP
     # Infinitely get the message.
     while True:
         if DEBUG: print("GRABBING MSG!")
