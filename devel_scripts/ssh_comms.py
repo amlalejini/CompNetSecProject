@@ -1,10 +1,13 @@
-import pxssh, getpass, time, json, sys, os
+#!/usr/bin/env python
+import getpass, time, json, sys, os, datetime
+from pexpect import pxssh
 
 DEFAULT_SETTINGS_FILE = "settings.json"
 MSG_FREQ = 3 # Message frequency in seconds
 DEBUG = True
 
 if __name__ == "__main__":
+    stop_time = datetime.datetime.now() + datetime.timedelta(hours=1)
     # Load up some defaults
     settings_file = DEFAULT_SETTINGS_FILE
     if "-h" in sys.argv:
@@ -24,6 +27,7 @@ if __name__ == "__main__":
     # Extract settings from settings file
     with open(settings_file) as fp:
         settings = json.load(fp)
+	if 
 
     # Try to grab all the things we need to run this script
     try:
@@ -84,6 +88,8 @@ if __name__ == "__main__":
         if DEBUG: print("GRABBING MSG!")
         ssh.sendline("get secret.msg")
         time.sleep(MSG_FREQ)
+	if datetime.datetime.now() > stop_time:
+	    break
 
     # Well, because we're doing things infinitely now, we'll just always leave a mess on the floor because who actually cares?
     # Say goodbye to ftp

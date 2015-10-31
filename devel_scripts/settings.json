@@ -1,9 +1,9 @@
 {
   "__comment": "Storing passwords in plain text is terrible, but whatever.  This is for a security project where the systems are supposed to insecure anyways.",
   "local": {
-    "machine_name": "eb2",
+    "machine_name": "enbody5",
     "username": "root",
-    "ip": "10.1.1.2",
+    "ip": "10.1.1.1",
     "password": "enbodyiscool"
   },
   "remote": {
