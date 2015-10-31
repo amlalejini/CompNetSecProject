@@ -54,7 +54,7 @@ if __name__ == "__main__":
     try:
         ssh.login(remote_ip, remote_uname, remote_pass, login_timeout = 60)
     except:
-        print("Failed to establish SSH connection with ''%s' at %s" % (remote_machine_name, remote_ip))
+        print("Failed to establish SSH connection with '%s' at %s" % (remote_machine_name, remote_ip))
         exit()
     else:
         print("SSH Connection Established!")
