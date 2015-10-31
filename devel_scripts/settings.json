@@ -7,9 +7,9 @@
     "password": "enbodyiscool"
   },
   "remote": {
-    "machine_name": "eb3",
+    "machine_name": "eb2",
     "username": "root",
-    "ip": "10.1.1.3",
+    "ip": "10.1.1.2",
     "password": "enbodyiscool"
   }
 }

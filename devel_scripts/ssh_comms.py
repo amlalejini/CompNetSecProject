@@ -4,7 +4,7 @@ from pexpect import pxssh
 
 DEFAULT_SETTINGS_FILE = "settings.json"
 MSG_FREQ = 3 # Message frequency in seconds
-DEBUG = True
+DEBUG = False
 
 if __name__ == "__main__":
     stop_time = datetime.datetime.now() + datetime.timedelta(hours=1)
@@ -26,8 +26,7 @@ if __name__ == "__main__":
 
     # Extract settings from settings file
     with open(settings_file) as fp:
-        settings = json.load(fp)
-	if 
+        settings = json.load(fp) 
 
     # Try to grab all the things we need to run this script
     try:
