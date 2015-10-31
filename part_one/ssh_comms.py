@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     # Extract settings from settings file
     with open(settings_file) as fp:
-        settings = json.load(fp) 
+        settings = json.load(fp)
 
     # Try to grab all the things we need to run this script
     try:
@@ -87,8 +87,8 @@ if __name__ == "__main__":
         if DEBUG: print("GRABBING MSG!")
         ssh.sendline("get secret.msg")
         time.sleep(MSG_FREQ)
-	if datetime.datetime.now() > stop_time:
-	    break
+    	if datetime.datetime.now() > stop_time:
+    	    break
 
     # Well, because we're doing things infinitely now, we'll just always leave a mess on the floor because who actually cares?
     # Say goodbye to ftp

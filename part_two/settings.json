@@ -1,0 +1,15 @@
+{
+  "__comment": "Storing passwords in plain text is terrible, but whatever.  This is for a security project where the systems are supposed to insecure anyways.",
+  "local": {
+    "machine_name": "",
+    "username": "",
+    "ip": "",
+    "password": ""
+  },
+  "remote": {
+    "machine_name": "",
+    "username": "",
+    "ip": "",
+    "password": ""
+  }
+}
