@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     while True:
         for ssh in ssh_conns:
-            ssh.sendline("ls")
+            ssh.sendline("ping 10.1.1.1")
             time.sleep(MSG_FREQ)
 
     	if datetime.datetime.now() > stop_time:
@@ -71,7 +71,5 @@ if __name__ == "__main__":
 
     # Well, because we're doing things infinitely now, we'll just always leave a mess on the floor because who actually cares?
     for ssh in ssh_conns:
-        # Say goodbye to ftp
-        ssh.sendline("bye")
         # Ready to log out of ssh
         ssh.logout()
