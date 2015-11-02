@@ -85,8 +85,10 @@ if __name__ == "__main__":
     # Infinitely get the message.
     while True:
         if DEBUG: print("GRABBING MSG!")
-        ssh.sendline("get secret.msg")
-        time.sleep(MSG_FREQ)
+        for i in xrange(0, 5):
+            msg = "get secret%d.msg" % i
+            ssh.sendline("get secret.msg")
+            time.sleep(MSG_FREQ)
     	if datetime.datetime.now() > stop_time:
     	    break
 
