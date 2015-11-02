@@ -87,7 +87,7 @@ if __name__ == "__main__":
         if DEBUG: print("GRABBING MSG!")
         for i in xrange(0, 5):
             msg = "get secret%d.msg" % i
-            ssh.sendline("get secret.msg")
+            ssh.sendline(msg)
             time.sleep(MSG_FREQ)
     	if datetime.datetime.now() > stop_time:
     	    break
